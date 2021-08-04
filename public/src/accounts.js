@@ -29,7 +29,6 @@ function getBooksPossessedByAccount(account, books, authors) {
       booksTaken.push(book);
     }
   });
-  //console.log(booksTaken);
   booksTaken.forEach((book) => {
     let anAuthor = authors.find((person) => person.id === book.authorId);
     book["author"] = anAuthor;
