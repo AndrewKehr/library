@@ -37,7 +37,6 @@ array.forEach(borrow => {
   obs['returned'] = borrow.returned;
   result.push(obs);
 })
-console.log(result)
 return result.slice(0,10);
 }
 
